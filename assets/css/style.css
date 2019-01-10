@@ -1,0 +1,1104 @@
+/*==========================
+File Name:asset/css/style.css
+Template Name :TRUMP | Personal Portfolio
+Description: This Is HTML5 Template
+Version:    1.0
+Last change:    24/31/18
+Author Name: Radwan Ahmed
+Primary use:  personal portfolio
+====================================*/
+
+
+/*==========================
+[Table of contents css]
+
+1. Global Body
+2.PRELODER
+3.TOP HEADER  
+4.TOP NAVBAR  
+5.Header BG  
+6.ABOUT CSS
+7.VIDEO CSS
+8.SERVICE CSS
+9.SKILL CSS
+10.COUNTER CSS
+11.PORTFOLIO CSS
+12.testmonial CSS
+13.CONTACT CSS
+14. FOOTER CSS
+==============================*/
+
+
+/*
+==========================================
+ google font
+
+ font-family: 'Slabo 27px', serif;
+ font-family: 'Pacifico', cursive;
+==========================================
+*/
+
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+*/
+
+
+/*   ===============================
+                1.Global CSS
+       ===============================*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.section-header h2:before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    border: 2px dotted #3BAFDC;
+    top: 112%;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.section-header h2:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 156px;
+    border: 2px dotted #3BAFDC;
+    top: 100%;
+    left: 50%;
+    margin-left: -78px;
+    margin-top: 10px;
+}
+
+.content-top-space {
+    margin-top: 70px;
+}
+
+.bold-header {
+    color: #3BAFDA;
+}
+
+
+/*===============
+                2.PRELODER
+                ======================*/
+
+#ud_preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+#ud_preloader .ud_pre_half {
+    background-color: #3BAFDC;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#ud_preloader #ud_bg_left {
+    left: 0;
+}
+
+#ud_preloader #ud_bg_right {
+    right: 0;
+}
+
+#ud_preloader #ud_dots {
+    z-index: 10001;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+#ud_preloader #ud_dots p {
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+#ud_preloader #ud_dots .ud_dot {
+    animation: infinite 500ms ease-in-out;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#ud_preloader #ud_dots .ud_dot:last-child {
+    margin: 0 0 0 0;
+}
+
+@keyframes ud_preloader_1 {
+    0% {
+        background: #fff;
+        transform: translateY(0);
+    }
+    25% {
+        background: #000;
+        transform: translateY(-5px);
+    }
+    50% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ud_preloader_2 {
+    25% {
+        background: #fff;
+        transform: translateY(0);
+    }
+    50% {
+        background: #3BAFDC;
+        transform: translateY(-5px);
+    }
+    75% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ud_preloader_3 {
+    50% {
+        background: #fff;
+        transform: translateY(0);
+    }
+    75% {
+        background: #3BAFDC;
+        transform: translateY(-5px);
+    }
+    100% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ud_preloader_4 {
+    75% {
+        background: #fff;
+        transform: translateY(0);
+    }
+    100% {
+        background: #000;
+        transform: translateY(-5px);
+    }
+    25% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+
+/*=============================>
+                  3.TOP HEADER  
+        ============================*/
+
+.header {
+    padding: 5px 0;
+    background-color: #3BAFDC;
+    position: relative;
+}
+
+.top-menu-left a {
+    color: #fff;
+    float: left;
+    text-decoration: none;
+}
+
+.top-menu-right ul li {
+    float: right;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.top-menu-right ul li a {
+    color: #fff;
+}
+
+
+/*=============================>
+                  4.TOP NAVBAR  
+        ============================*/
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    color: #000;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin-top: -15px;
+}
+
+.navbar-default {
+    padding: 20px 0;
+    position: -webkit-sticky;
+    background-color: #FFFFFF;
+    border-color: transparent;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    transition: .7s;
+}
+
+.header,
+.navbar-default {
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-weight: 400;
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #222;
+    background-color: transparent
+}
+
+
+/* -------------> 5.Navbar  Skew <---------------- */
+
+.nav-vk li {
+    margin-right: 5px;
+}
+
+.nav-vk li:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(-20deg);
+    border: 2px solid #3BAFDC;
+    margin-right: 5px;
+}
+
+.nav-vk li:hover:before {
+    background: transparent;
+}
+
+
+/* ---------------->Navbar  Ticky <---------------*/
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+
+/* ----------------->Navbar  Menu Hover<------------------- */
+
+.circleBehind a:before,
+.circleBehind a:after {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #3BAFDA;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.circleBehind a:after {
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+.circleBehind a:hover:before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.circleBehind a:hover:after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+
+/*=============================>
+                  5.Header BG  
+        ============================*/
+
+.header-img {
+    background-image: url(../image/bg.png);
+    height: auto;
+    margin-top: -30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+}
+
+.header-img:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+    opacity: .6;
+}
+
+
+/*  --------------->  HEADER BODY TEXT<-------------*/
+
+.d-table {
+    margin: 0 auto;
+    text-align: center;
+    margin-top:190px;
+    color: #fff;
+}
+
+.d-table h1 {
+    font-family: 'Slabo 27px', serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.d-table p {
+    font-family: 'Slabo 27px', serif;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.d-table a {
+    padding: 10px 25px 10px 25px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 500px;
+    border: 2px solid #3BAFDA;
+    border-radius: 20px;
+}
+
+
+/*=============================>
+              6.ABOUT CSS
+      ============================*/
+
+.nondine-about {
+    background-color: #f6f6f6;
+}
+
+.about-left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.about-left img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    transition: .5s;
+    background-size: cover;
+}
+
+.about-left img:hover {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    transform: rotateX(10deg);
+    transition: .5s;
+}
+
+.about-left .about-left-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-left .about-left-details:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #585e60;
+    z-index: -1;
+    opacity: .7;
+    border-radius: 10px;
+    transform: rotateX(10deg);
+    transition: .5s;
+}
+
+.about-left-details h4 {
+    text-transform: uppercase;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 400;
+}
+
+.about-left-details {
+    padding: 12px 0;
+}
+
+.about-left-details ul li {
+    display: inline;
+}
+
+.about-left-details ul li a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+    color: #fff;
+    font-size: 18px;
+    background: #222;
+    border-radius: 50px;
+    padding: 5px;
+    transform: scale(1);
+    transition: .6s;
+}
+
+.about-left-details ul li a:hover {
+    background: #fff;
+    color: #222;
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+.about-right h3 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.about-right p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 25px;
+    color: #4e4e4e;
+}
+
+.about-right a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #3BAFDC;
+    padding: 10px 25px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600px;
+    text-transform: uppercase;
+    font-family: 'Slabo 27px', serif;
+}
+
+.hvr-float-shadow:hover {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 25px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600px;
+}
+
+
+/*=============================>
+                  7.VIDEO CSS
+        ============================*/
+
+.video-area {
+    background: url(../image/videoarea.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
+
+.video-area:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: .60;
+    background: #000;
+    z-index: -1;
+    color: #fff;
+}
+
+.video-area h2 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.video-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    border: 2px solid #3BAFDA;
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: .5s;
+}
+
+.video-icon a:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+
+/*=============================>
+                  8.SERVICE CSS
+        ============================*/
+
+.service {
+    background-size: cover;
+    position: relative;
+}
+
+.service:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0;
+    bottom: 0;
+    width: 100%;
+    height: 215px;
+    background: url(../image/wave.png);
+    background-size: cover;
+}
+
+.service-box i {
+    font-size: 26px;
+    color: #000;
+}
+
+.service-box {
+    margin-top: 30px;
+    background-color: blu
+}
+
+.service-box h4 {
+    color: #222;
+    font-size: 24px;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.service-box p {
+    color: #222;
+    font-size: 14px;
+    font-family: 'Slabo 27px', serif;
+    margin-top: 10px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+
+/*=============================>
+                  9.SKILL CSS
+        ============================*/
+
+.skill {
+    background-color: #f3f3f3;
+}
+
+.skill-left h3 {
+    color: #222;
+    font-family: 'Slabo 27px', serif;
+    font-size: 24px;
+}
+
+.skill-left p {
+    margin-top: 20px;
+    color: #222;
+    font-family: 'Slabo 27px', serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.skill-left p:last-child {
+    margin-top: 30px;
+}
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skill-right h4 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', serif;
+    color: #222;
+}
+
+.skill-right p {
+    font-weight: 300;
+    line-height: 26px;
+    color: #222;
+    font-family: 'Slabo 27px', serif;
+    margin-top: 18px;
+    font-weight: 400;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.all-skill-bar p {
+    margin-top: 0;
+}
+
+.all-skill-bar .skillbar {
+    background: #3BAFDA;
+    height: 0px;
+    overflow: hidden;
+    padding: 10px 25px;
+    margin-top: 10px !important;
+}
+
+.all-skill-bar .skillbar-bar {
+    background: #fff !important;
+    height: 9px;
+    top: 5.1px;
+    position: absolute;
+    left: 6px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.all-skill-bar .skill-bar-percent {
+    color: #000;
+    top: -8px;
+    position: absolute;
+}
+
+h5.skill-bar-title {
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-top: 15px;
+}
+
+
+/*=============================>
+                   10.COUNTER CSS
+        ============================*/
+
+.counter {
+    background-image: url(../image/bg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Slabo 27px', serif;
+}
+
+.counter:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: -1;
+}
+
+.counter-box i {
+    font-size: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    line-height: 38px;
+    margin-bottom: 6px;
+    color: #3BAFDA;
+}
+
+.counter-num {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.counter-name {
+    font-size: 26px;
+    text-transform: capitalize;
+}
+
+
+/*=============================>
+                   11.PORTFOLIO CSS
+        ============================*/
+
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu button {
+    background-color: transparent;
+    border: 0;
+    color: #222;
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+    outline: none;
+    border: none;
+}
+
+.portfolio-menu button:hover {
+    color: #3BAFDA;
+}
+
+.portfolio-item {
+    margin-top: 36px;
+    position: relative;
+    transition: .3s;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+button.mixitup-control-active {
+    color: #3BAFDA;
+}
+
+.portfolio-item:hover .portfolio-item-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background: rgba(59, 175, 218, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portfolio-item-hover a {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/*=============================>
+                   12.TESTMONIAL CSS
+        ============================*/
+
+.testmonial {
+    background: url(../image/testmonial-bg.jpeg) fixed 100% no-repeat;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
+
+.testmonial:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+    background-color: #000;
+}
+
+.owl-carousel-testmonial img {
+    width: auto !important;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+h4.testmonial-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 12px 0;
+    color: #fff;
+}
+
+
+/*=============================>
+                   13.CONTACT CSS
+        ============================*/
+
+.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-left:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.contact-left {
+    background-image: url(../image/contactmap.jpg);
+    padding: 30px;
+    background-size: cover;
+    z-index: 0;
+    color: #000;
+    position: relative;
+    height: 410px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-icon {
+    float: left;
+}
+
+.contact-icon i {
+    font-size: 15px;
+}
+
+.contact-details {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.contact-right {
+    background-color: #3BAFDB;
+    padding: 30px;
+}
+
+.input_container {
+    position: relative;
+    direction: ltr;
+    margin-bottom: 20px;
+}
+
+.input {
+    height: 40px;
+    padding: 20px;
+    width: 60%;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #3BAFDB;
+    padding-left: 30px;
+}
+
+.input_icon {
+    position: absolute;
+    bottom: 7px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.user-message-box {
+    height: 160px;
+    width: 60%;
+    background-color: #3BAFDB;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contact-button {
+    width: 60%;
+    background-color: #3BAFDB;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+}
+
+
+/*=============================>
+                  14. FOOTER CSS
+        ============================*/
+
+.footer {
+    background-color: #F3F3F3;
+    padding: 30px;
+}
+
+.footer-left ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.footer-left ul li a {
+    color: #000;
+}
+
+.footer-right {
+    float: right;
+}
